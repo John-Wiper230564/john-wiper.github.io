@@ -49,24 +49,7 @@ table {
 /* Responsive grid starts here *//
 /* Setting font to scale depent on the view port */
 
-h1{
-    font-size: 8vw;
-}
-p{
-    font-size: 2vw;   
-}
-/* Tree view*/
-/* Remove default bullets */
-ul, #myUL {
-  list-style-type: none;
-}
-
-/* Remove margins and padding from the parent ul */
-#myUL {
-  margin: 0;
-  padding: 0;
-}
-/* Style the caret/arrow */
+Style the caret/arrow */
 .caret {
   cursor: pointer;
   user-select: none; /* Prevent text selection */
