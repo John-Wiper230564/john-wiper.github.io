@@ -116,47 +116,27 @@ input[type=text] {
   margin: 3px 0;
   display: block;
 }
-
-/* Page content */
-.content {
-  padding: 10px;
-
-
 *{
     box-sizing: border-box;
 }
-#wrapper{
-    width: 90%;
+.wrapper{
+    width: 95%;
     border: 1px dashed #d1d1d1;
+    margin: 0 auto;
     }
- 
-
-/* Set up each columns default properties */
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 1px solid #d1d1d1;/* Set the border colur to grey*/
-}
-/* Each row is clearedd to facilitate proper page layout */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* @media query to aapply diferent styles depending on user device */
 /* For mobile phones: */
 
 @media only screen and (max-width: 600px) {
   /* For tablets: */
-{
+
   
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 /* Styles go here */
      /* For desktop: */
-{
+
   
 }
 
@@ -164,7 +144,7 @@ input[type=text] {
 @media only screen and (min-width: 768px) {
 /* Styles go here */
     /* For desktop: */
-{
+
   
 }
 
@@ -172,13 +152,13 @@ input[type=text] {
 @media only screen and (min-width: 992px) {
 /* Styles go here */
     /* For desktop: */
-{
+
   
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 /* Styles go here */
      /* For desktop: */
-{
+
   
 }
