@@ -1,1 +1,52 @@
+:root{
+    font-size: 2vw;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+    color: #274A62;
+}
+html, body{
+    height: 100%;
+}
+.wrapper{
+    background-color: #FDF8F8;
+    border: 1px dashed #c4c4c4;
+    width: 95%;
+    margin: 0 auto;
+}
 
+
+
+/* @media query to aapply diferent styles depending on user device */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+  
+    
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  /* Styles go here */
+       /* For desktop: */
+  
+    
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  /* Styles go here */
+      /* For desktop: */
+  
+    
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  /* Styles go here */
+      /* For desktop: */
+  
+    
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  /* Styles go here */
+       /* For desktop: */
+  
+    
+  }

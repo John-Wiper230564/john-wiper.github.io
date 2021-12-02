@@ -117,48 +117,5 @@ input[type=text] {
   display: block;
 }
 *{
-    box-sizing: border-box;
-}
-.wrapper{
-    width: 95%;
-    border: 1px dashed #d1d1d1;
-    margin: 0 auto;
-    }
-/* @media query to aapply diferent styles depending on user device */
-/* For mobile phones: */
-
-@media only screen and (max-width: 600px) {
-  /* For tablets: */
-
-  
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-/* Styles go here */
-     /* For desktop: */
-
-  
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-/* Styles go here */
-    /* For desktop: */
-
-  
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-/* Styles go here */
-    /* For desktop: */
-
-  
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-/* Styles go here */
-     /* For desktop: */
-
-  
+  box-sizing: border-box;
 }
