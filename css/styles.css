@@ -4,6 +4,9 @@
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
     padding: .75rem .25rem;
 }
+*{
+    box-sizing: border-box;
+}
 html body{
     height: 100%;
 }
