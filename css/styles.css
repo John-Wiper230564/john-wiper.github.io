@@ -26,7 +26,7 @@ header{
 .container{
     background-color: #f1f1f1;
 }
-/* Define the top right border to be curved leaving the other corners square */
+/* Define the top left border to be curved leaving the other corners square */
 .imagecontainer, .image{
     border-radius: 2rem 0 0 0;
 }
