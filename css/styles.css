@@ -62,7 +62,7 @@ p{
     max-width: 75rem; /* Set Max line-length for paragraphs */
     overflow: hidden;
 }
-/* Definne default links here */
+/* Define default links here */
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     font-weight: bold;
