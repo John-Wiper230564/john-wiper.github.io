@@ -2,7 +2,6 @@
     font-size: 2vw;
     color: #274A62;
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-    padding: .75rem .25rem;
 }
 *{
     box-sizing: border-box;
@@ -24,7 +23,6 @@ body{
 }
 header{
     padding: .5rem .25rem;
-    
 }
 .container{
     background-color: #f1f1f1;
