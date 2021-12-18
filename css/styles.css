@@ -20,6 +20,7 @@ body{
     width: 95%;
     margin: 0 auto;
     background-color: #E9EAEB;
+    border: 1px dashed #c4c4c4;
 }
 header{
     padding: .5rem .25rem;
