@@ -25,15 +25,22 @@ body{
     background-color: #fff;
     border: 1px dashed #c4c4c4;
 }
+header, .test, .work, .container{
+    border-bottom: 1px solid #c4c4c4;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.25);
+    padding: 0.5rem 0.25rem;
+}
 header{
-    padding: .5rem .25rem;
+    overflow: auto;
 }
-.container{
-    background-color: #fff;
+.test{
+    overflow: auto;
 }
+
 /* Define the top left border to be curved leaving the other corners square */
 .imagecontainer, .image{
     border-radius: 2rem 0 0 0;
+    overflow: auto;
 }
 .imagecontainer{
     background-color: #c4c4c4; /* default background-color for browsers that don't know about inear-gradient */
@@ -42,14 +49,12 @@ header{
 .image{
     background: #386B8C;
 }
-.work{
-    background-color: #f1f1f1;
-}
 footer{
     position: absolute;
     bottom: 0;
     padding: 0.5rem 0.25rem;
-    border: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    border-top: 1px solid rgba(196, 196, 196, 0.25);
 }
 .imagecontainer, .portfolio{
     width: 48%;
@@ -57,15 +62,11 @@ footer{
 }
 .imagecontainer{
     float: left;
+    overflow: auto;
 }
 .portfolio{
     float: right;
-}
-.imagecontainer::after, .portfolio::after{
     overflow: auto;
-    clear: both;
-    content: "";
-    display: table;
 }
 /* Define how text and links are displayed */
 /* Main headings */
@@ -77,8 +78,6 @@ h2{
 }
 h3{
     font-size: 1.3rem;
-    font-weight: bold;
-    background: #ccc;
 }
 /* Define paragraph style */
 p{
@@ -92,6 +91,7 @@ a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     font-weight: bold;
     border-radius: 0 0 .5rem .5rem;
+    padding: 0.5rem 0.25rem;
 }
 a:link {
     color: #64BEFA;
@@ -99,11 +99,37 @@ a:link {
   }
   /* visited link */
   a:visited {
-    color: #AAA7A7;
-    border-bottom: 1px dashed #AAA7A7;
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
   }
   /* mouse over link  and active link status */
   a:hover, a:active {
     color: #f1f1f1;
-    background-color: #9AB1C2;
+    background-color: #386B8C;
+    border-bottom: none;
+  }
+  /* Define custom styles for page elements */
+  /* header font styles and links */
+  header a.logo h1, header p{
+      float: left;
+  }
+  header a.logo h1{
+      display: inline-block;
+      overflow: auto;
+  }
+  a.tonav{
+      overflow: auto;
+      float: right;
+      position: absolute;
+      top: 0.5rem;
+      right: 1.5rem;
+      border: 1px solid #386B8C;
+      background-color: #386B8C;
+      color: #f1f1f1;
+      border-radius: 0.5rem;
+  }
+  header p{
+      display: inline-block;
+      clear: left;
+      margin: 0rem;
   }
