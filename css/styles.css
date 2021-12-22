@@ -45,7 +45,6 @@ header{
     overflow: auto;
 }
 
-
 header::after{
     content: "";
     display: table;
