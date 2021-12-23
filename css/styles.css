@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* Declare :root variables */
 }
 
 *{
@@ -96,11 +97,6 @@ footer{
     border-top: 1px solid rgba(196, 196, 196, 0.25);
 }
 
-.imagecontainer, .portfolio{
-    width: 48%;
-    background-color: #fff;
-}
-
 .imagecontainer{
     float: left;
     overflow: auto;
@@ -108,15 +104,8 @@ footer{
 
 .portfolio{
     float: right;
-    overflow: auto;
-    clear: both;
-    content: "";
-    display: table;
     background-color: #E9EAEB;
     padding: .5rem .25rem;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
 }
 
 /* Define how text and links are displayed */
