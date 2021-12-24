@@ -3,56 +3,74 @@
     margin: 0;
     padding: 0;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* Declare :root variables */
 }
+
 *{
     box-sizing: border-box;
 }
+
+html, body{
+    height: 100%;
+	font-size: 2vw;
+}
+
 html{
     height: 100%;
     color: #274A62;
 }
+
 body{
     height: 100%;
-    background-color: rgb(196, 196 196,); /* default background-color for browsers that don't know about inear-gradient */
+    background-color: rgb(196, 196, 196); /* default background-color for browsers that don't know about inear-gradient */
     background-image: linear-gradient(110deg, rgba(196, 196, 196, .75), rgba(196, 196, 196,.25), rgba(196, 196, 196, .75));
 }
+
 /* Mobile first responsive layout */
 /* Set divs css set-up */
 #wrapper, footer{
     width: 95%;
     margin: 0 auto;
 }
+
 #wrapper{
     height: 100%;
     background-color: #fff;
     border: 1px dashed #c4c4c4;
 }
-header{
-    padding: .5rem .25rem;
+
+header, .test, .work, .container{
+    border-bottom: 1px solid #c4c4c4; /* Fallback colour */
+    border-bottom: 1px solid rgba(196, 196, 196, 0.25);
+    padding: 0.5rem 0.25rem;
 }
+
+header{
+    overflow: auto;
+}
+
 header::after{
     content: "";
     display: table;
     clear: both;
 }
+
 .container{
-    background-color: #f1f1f1;
+    background-color: #fff;
 }
-.container::before, 
-.container::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 /* Define the top left border to be curved leaving the other corners square */
 .imagecontainer, .image{
     border-radius: 2rem 0 0 0;
+    overflow: auto;
 }
+
 .imagecontainer{
     background-color: #c4c4c4; /* default background-color for browsers that don't know about inear-gradient */
     background-image: linear-gradient(110deg, rgba(196, 196, 196, .75), rgba(196, 196, 196,.25), rgba(196, 196, 196, .75));
     float: left;
 }
+
 .image{
     background: #386B8C;
     width: calc(100% - 6px);
@@ -61,83 +79,136 @@ header::after{
     top: 3px;
     left: 3px;
 }
+
 .imagecontainer, .portfolio{
     width: 48%;
     border: 1px dashed #c4c4c4;
 }
+
 .portfolio{
     float: right;
 }
-.work::before{
-    clear: both;
-    content: "";
-    display: table;
-}
-.work{
-    background-color: #f1f1f1;
-}
+
 footer{
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem 0.25rem;
+    border-top: 1px solid #c4c4c4;
+    border-top: 1px solid rgba(196, 196, 196, 0.25);
+}
+
+.imagecontainer{
+    float: left;
+    overflow: auto;
+}
+
+.portfolio{
+    float: right;
     background-color: #E9EAEB;
     padding: .5rem .25rem;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
 }
+
 /* Define how text and links are displayed */
 /* Main headings */
 h1{
     font-size: 1.75rem;
 }
+
 h2{
     font-size: 1.5rem;
 }
+
 h3{
+    font-size: 1.15rem;
+    font-weight: bold;
     font-size: 1.25rem;
     border: 1px dashed #ccc;
+    display: inline-block;
 }
+
 /* Define paragraph style */
 p{
-    font-size: .9rem;
+    font-size: 1rem;
     margin: .75rem .5rem;
     max-width: 75rem; /* Set Max line-length for paragraphs */
     overflow: hidden;
 }
+
 .container p, .portfolio p, header p, footer p{
     margin: 0;
     padding: 0;
 }
+
 /* Define default links here */
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     font-weight: bold;
     border-radius: 0 0 .5rem .5rem;
+    padding: 0.5rem 0.25rem;
 }
+
 a:link {
     color: #64BEFA;
     border-bottom: 1px dashed #64BEFA;
   }
+
   /* visited link */
   a:visited {
-    color: #AAA7A7;
-    border-bottom: 1px dashed #AAA7A7;
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
   }
+
   /* hover link  and active link status */
   a:hover, a:active {
     color: #f1f1f1;
-    background-color: #9AB1C2;
+    background-color: #386B8C;
+    border-bottom: none;
   }
+
+  /* Define custom styles for page elements */
+  /* header font styles and links */
+  header a.logo h1, header p{
+      float: left;
+  }
+
+  header a.logo h1{
+      display: inline-block;
+      overflow: auto;
+  }
+
+  a.tonav{
+      overflow: auto;
+      float: right;
+      position: absolute;
+      top: 0.5rem;
+      right: 1.5rem;
+      border: 1px solid #386B8C;
+      color: #386B8C;
+      border-radius: 0.5rem;
+  }
+
+  header p{
+      display: inline-block;
+      clear: left;
+      margin: 0rem;
+      overflow: auto;
+  }
+
   header a, header h1{
       display: inline-block;
       padding: 0;
       margin: 0;
   }
+
   header a.logo h1{
     color: #64BEFA;
   }
+
   header a.tonav{
       float: right;
       border-bottom: none;
   }
+
   header a:hover, header a:visited{
       background-color: transparent;
       color: #274A62;
