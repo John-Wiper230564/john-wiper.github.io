@@ -2,11 +2,11 @@
 <p>This is a project for me to continue to learn and solidify my knowledge in html css.##</p>
 
 
-##Current Learning
+## Current Learning
 
--Javascript
+- Javascript
 
-###Continue To Increase Knowledge Of:
+### Continue To Increase Knowledge Of:
 
--HTML
--CSS
+- HTML
+- CSS
