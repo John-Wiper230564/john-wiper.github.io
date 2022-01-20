@@ -2,7 +2,7 @@
 <p>This is a project for me to continue to learn and solidify my knowledge in html css.</p>
 
 
-## Current Learning
+## Currently Learning
 
 - Javascript
 
