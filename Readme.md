@@ -5,6 +5,8 @@
 ## Currently Learning
 
 - Javascript
+- github
+- git
 
 ### Continue To Increase Knowledge Of:
 
