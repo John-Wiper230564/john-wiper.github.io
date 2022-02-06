@@ -28,10 +28,6 @@ body{
 
 /* Mobile first responsive layout */
 /* Set divs css set-up */
-#wrapper, footer{
-    width: 95%;
-    margin: 0 auto;
-}
 
 #wrapper{
     height: 100%;
