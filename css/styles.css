@@ -4,6 +4,7 @@
     padding: 0;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     /* Declare :root variables */
+    --space: 0.5rem; /* default paddig */
 }
 
 *{
@@ -28,6 +29,10 @@ body{
 
 /* Mobile first responsive layout */
 /* Set divs css set-up */
+#wrapper, footer{
+    width: 95%;
+    margin: 0 auto;
+}
 
 #wrapper{
     height: 100%;
